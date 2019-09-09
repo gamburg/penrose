@@ -293,9 +293,12 @@ body {
 
 .main_project_container {
   display: inline-block;
+  margin: 3em 2em 0 2em;
+  width: 80%;
+  max-width: 550px;
+
   line-height: 1.6;
   font-size: 2em;
-  margin: 3em 2em 0 2em;
   text-align: center;
 }
 
@@ -352,9 +355,31 @@ ul:hover li:hover {
 }
 
 
+ul.projects li>a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
+ul.projects li span {
+  flex: initial;
+  
+  white-space: nowrap;
+  overflow-x: hidden;
+}
 
+ul.projects li span.title {
+    text-align: left;
+}
 
+ul.projects li span.year {
+  text-align: right;
+}
+
+ul.projects li span.dots {
+  flex: 1;
+  overflow-x: hidden;
+}
 
 
 
