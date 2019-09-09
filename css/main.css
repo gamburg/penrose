@@ -293,7 +293,6 @@ body {
 
 .main_project_container {
   display: inline-block;
-  margin: 3em 2em 0 2em;
   width: 80%;
   max-width: 550px;
 
@@ -304,6 +303,7 @@ body {
 
 #timecode {
   margin-bottom: 2em;
+  text-align: right;
 }
 
 a {
@@ -313,10 +313,12 @@ a {
 }
 
 nav {
+  display: flex;
   margin-bottom:.5em;
 }
 
 nav a {
+  flex: 1;
   opacity: .3;
 }
 
@@ -326,6 +328,14 @@ nav a.selected {
 
 nav a:not(.selected):hover {
   opacity: .5;
+}
+
+nav a:first-child {
+  text-align: left;
+}
+
+nav a:last-child {
+  text-align: right;
 }
 
 ul {
@@ -363,7 +373,7 @@ ul.projects li>a {
 
 ul.projects li span {
   flex: initial;
-  
+
   white-space: nowrap;
   overflow-x: hidden;
 }
