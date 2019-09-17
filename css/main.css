@@ -295,6 +295,7 @@ body {
   display: inline-block;
   width: 80%;
   max-width: 550px;
+  margin: 3em 2em 0 2em;
 
   line-height: 1.6;
   font-size: 2em;
