@@ -286,10 +286,13 @@ body {
   background-attachment: fixed;
   background-position: center; 
 
-  font-size: 1em;
   line-height: 1;
   font-family: 'VCR_OSD_MONO', monospace;
-}
+} @media only screen and (max-width: 600px) {
+  	body {
+    	font-size: .7em;
+  	}
+  }
 
 .main_project_container {
   display: inline-block;
@@ -300,7 +303,12 @@ body {
   line-height: 1.6;
   font-size: 2em;
   text-align: center;
-}
+} @media only screen and (max-width: 600px) {
+	  .main_project_container {
+	  	margin: .5em 10% 0 10%;
+	  	width: 80%;
+	  }
+	}
 
 #timecode {
   margin-bottom: 2em;
@@ -392,11 +400,7 @@ ul.projects li span.dots {
   overflow-x: hidden;
 }
 
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 600px) {
+  .year, .dots {
+    display: none;
+  }
