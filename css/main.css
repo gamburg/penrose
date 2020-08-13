@@ -311,8 +311,12 @@ body {
 	}
 
 .main_project_container img {
-    max-width: 100%;
-}
+    width: 65%;
+} @media only screen and (max-width: 600px) {
+	  .main_project_container img {
+	  	width: 100%;
+	  }
+	}
 
 #timecode {
   margin-bottom: 2em;
