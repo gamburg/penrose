@@ -311,7 +311,7 @@ body {
 	}
 
 .main_project_container img {
-    max-width: 550px;
+    max-width: 100%;
 }
 
 #timecode {
